@@ -14,4 +14,4 @@ if(isNil "_unit") exitWith {};
 if(isNull _unit) exitWith {};
 if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 
-[[player],"life_fnc_freezePlayer",_unit,false] spawn life_fnc_MP; 
+[player] remoteExec ["life_fnc_freezePlayer",_unit];

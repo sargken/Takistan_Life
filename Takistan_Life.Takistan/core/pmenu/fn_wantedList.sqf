@@ -7,9 +7,9 @@
 	Description:
 	Displays wanted list information sent from the server.
 */
-private["_info","_display","_list","_units","_entry"];
+private ["_display","_list","_units","_entry"];
+params [["_info",[]]];
 disableSerialization;
-_info = param [0,[],[[]]];
 _display = findDisplay 2400;
 _list = _display displayctrl 2401;
 _units = [];
