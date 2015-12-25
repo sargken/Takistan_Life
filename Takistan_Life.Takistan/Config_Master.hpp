@@ -296,6 +296,11 @@ class VirtualShops {
 		name = "STR_Shops_Cement";
 		items[] = { "cement" };
 	};
+    
+    class resource {
+		name = "STR_Shops_Resource";
+		items[] = { "cement", "salt_refined", "iron_refined", "copper_refined", "glass" };
+	};
 
 	class gold {
 		name = "STR_Shops_Gold";

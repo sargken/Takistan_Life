@@ -105,6 +105,13 @@
 			<French>Poseur de Ciment</French>
 			<Portuguese>Comprador de Cimento</Portuguese>
 		</Key>
+        <Key ID="STR_Shops_Resource">
+			<Original>Resource Shop</Original>
+			<German>Juan's Zementleger</German>
+			<Italian>Vendita Cemento</Italian>
+			<French>Poseur de Ciment</French>
+			<Portuguese>Comprador de Cimento</Portuguese>
+		</Key>
 		<Key ID="STR_Shops_Gold">
 			<Original>Cash 4 Gold</Original>
 			<German>Goldhändler</German>
