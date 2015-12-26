@@ -2804,7 +2804,7 @@ class Mission
 					vehicle="B_Helipilot_F";
 					leader=1;
 					skill=0.60000002;
-					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_airhq"",west,""cop_air_1"",""cop"",""Rasman""]]; this addAction[""Vehicle Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_heli"",west,""cop_air_1"",""cop"",""Rasman""]]; this addAction[""Vehicle Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -9738,7 +9738,7 @@ class Mission
 		};
 		class Item634
 		{
-			position[]={5957.397,83.040001,11815.513};
+			position[]={5957.397,83.040001,11815.655};
 			azimut=511.79547;
 			id=812;
 			side="EMPTY";
@@ -9748,7 +9748,7 @@ class Mission
 		};
 		class Item635
 		{
-			position[]={5955.2378,83.040001,11814.377};
+			position[]={5955.2549,83.040001,11814.431};
 			azimut=511.79547;
 			id=813;
 			side="EMPTY";
@@ -9758,7 +9758,7 @@ class Mission
 		};
 		class Item636
 		{
-			position[]={5956.3447,83.040001,11814.908};
+			position[]={5956.3628,83.040001,11815.068};
 			azimut=511.51093;
 			id=814;
 			side="EMPTY";
@@ -9768,7 +9768,7 @@ class Mission
 		};
 		class Item637
 		{
-			position[]={5954.0952,83.040001,11813.766};
+			position[]={5954.166,83.040001,11813.837};
 			azimut=511.79547;
 			id=815;
 			side="EMPTY";
@@ -9869,7 +9869,7 @@ class Mission
 		class Item647
 		{
 			position[]={5960.4868,83.040001,11817.285};
-			azimut=506.57779;
+			azimut=510.62524;
 			id=825;
 			side="EMPTY";
 			vehicle="Land_CncWall1_F";
@@ -9878,8 +9878,8 @@ class Mission
 		};
 		class Item648
 		{
-			position[]={5959.3892,83.040001,11816.621};
-			azimut=508.95038;
+			position[]={5959.4248,83.040001,11816.71};
+			azimut=512.59851;
 			id=826;
 			side="EMPTY";
 			vehicle="Land_CncWall1_F";
@@ -9888,8 +9888,8 @@ class Mission
 		};
 		class Item649
 		{
-			position[]={5958.2393,83.040001,11815.979};
-			azimut=508.95038;
+			position[]={5958.3281,83.040001,11816.139};
+			azimut=512.98523;
 			id=827;
 			side="EMPTY";
 			vehicle="Land_CncWall1_F";
