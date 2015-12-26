@@ -109,11 +109,25 @@ class CarShops {
 		};
 	};
 
-	class cop_air {
+	class cop_heli {
 		side = "cop";
 		vehicles[] = {
-				{ "B_Heli_Light_01_F", 75000, "cAir", { "", "", -1 } },
-				{ "B_Heli_Transport_01_F", 200000, "cAir", { "life_coplevel", "SCALAR", 3 } }
+				{ "MELB_MH6M", 75000, "cAir", { "", "", -1 } },
+                { "MELB_H6M", 68500, "cAir", { "", "", -1 } },
+                { "MELB_AH6M_L", 145000, "cAir", { "", "", -1 } },
+                { "MELB_AH6M_M", 210000, "cAir", { "", "", -1 } },
+                { "MELB_AH6M_H", 270000, "cAir", { "", "", -1 } },
+                { "CUP_B_UH1Y_UNA_USMC", 110000, "cAir", { "", "", -1 } },
+                { "CUP_B_UH1Y_GUNSHIP_USMC", 230000, "cAir", { "", "", -1 } },
+                { "CUP_B_Mi171Sh_ACR", 290000, "cAir", { "", "", -1 } },
+                { "CUP_B_Mi171Sh_Unarmed_ACR", 128000, "cAir", { "", "", -1 } },
+                { "CUP_B_UH60M_US", 190000, "cAir", { "", "", -1 } },
+                { "CUP_B_UH60M_Unarmed_FFV_US", 140000, "cAir", { "", "", -1 } },
+                { "CUP_B_MH60S_USMC", 165000, "cAir", { "", "", -1 } },
+                { "CUP_B_MH60S_FFV_USMC", 165000, "cAir", { "", "", -1 } },
+                { "CUP_B_UH60M_Unarmed_FFV_MEV_US", 320000, "cAir", { "", "", -1 } },
+                { "CUP_B_AH1Z", 725000, "cAir", { "", "", -1 } },
+                { "CUP_B_AH64D_USA", 750000, "cAir", { "", "", -1 } }
 		};
 	};
 
