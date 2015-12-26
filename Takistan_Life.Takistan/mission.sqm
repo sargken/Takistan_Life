@@ -2287,7 +2287,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this allowDamage false; this allowDamage false; this addAction[""Cop Clothing Shop"",life_fnc_clothingMenu,""cop""];";
+					init="this enableSimulation false; this allowDamage false; this allowDamage false; this addAction[""Cop Clothing"",life_fnc_clothingMenu,""cop""];";
 				};
 				class Item36
 				{
@@ -3455,7 +3455,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  ";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""patrol"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""patrol"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""patrol"",0,false,false,"""",' !license_cop_patrol && playerSide == west ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""response"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""response"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""response"",0,false,false,"""",' !license_cop_response && playerSide == west '];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""sobr"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""sobr"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""sobr"",0,false,false,"""",' !license_cop_sobr && playerSide == west '];this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];";
 		};
 		class Item22
 		{
@@ -10135,7 +10135,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CUP_UNBasicAmmunitionBox_EP1";
 			skill=0.60000002;
-			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Sergeant Weapon Shop"",life_fnc_weaponShopMenu,""cop_sergeant""]; ";
+			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""SOBR"",life_fnc_weaponShopMenu,""sobr_weapons""]; ";
 		};
 		class Item680
 		{
@@ -10146,7 +10146,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CUP_UNBasicAmmunitionBox_EP1";
 			skill=0.60000002;
-			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Patrol Officer Weapon Shop"",life_fnc_weaponShopMenu,""cop_patrol""]; ";
+			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Criminal Response-Officer"",life_fnc_weaponShopMenu,""cop_criminal""]; ";
 		};
 		class Item681
 		{
@@ -10157,7 +10157,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CUP_UNBasicAmmunitionBox_EP1";
 			skill=0.60000002;
-			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Cop Weapon Shop"",life_fnc_weaponShopMenu,""cop_basic""];";
+			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Patrol-Officer"",life_fnc_weaponShopMenu,""cop_basic""];";
 		};
 		class Item682
 		{
@@ -10168,7 +10168,7 @@ class Mission
 			side="EMPTY";
 			vehicle="CUP_UNBasicAmmunitionBox_EP1";
 			skill=0.60000002;
-			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Cop Item Shop"",life_fnc_virt_menu,""cop""];";
+			init="clearWeaponCargo this; this enableSimulation false; this allowDamage false; clearMagazineCargo this;this addAction[""Police Shop"",life_fnc_virt_menu,""cop""];";
 		};
 		class Item683
 		{
@@ -10390,7 +10390,7 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={5935.9536,82.78196,11931.68};
+			position[]={5949.229,83.040001,11900.681};
 			name="police_hq_1";
 			text=" Peacekeeper HQ";
 			type="Faction_CUP_NATO";

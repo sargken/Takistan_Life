@@ -3408,6 +3408,15 @@
 			<Italian>Licenza da Pilota</Italian>
 			<Portuguese>Licença de Piloto</Portuguese>
 		</Key>
+        <Key ID="STR_License_Patrol">
+			<Original>Patrol Officer Training</Original>
+		</Key>
+        <Key ID="STR_License_Response">
+			<Original>Criminal Response Officer Training</Original>
+		</Key>
+        <Key ID="STR_License_Sobr">
+			<Original>SOBR Training</Original>
+		</Key>
 		<Key ID="STR_License_Heroin">
 			<Original>Heroin Training</Original>
 			<German>Heroinausbildung</German>

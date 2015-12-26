@@ -93,61 +93,177 @@ class WeaponShops {
 
     //Cop Shops
     class cop_basic {
-        name = "Altis Cop Shop";
+        name = "Patrol-Officer Shop";
         side = "cop";
-        license = "";
+        license = "patrol";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_sdar_F", "Taser Rifle", 20000 },
-            { "hgun_P07_snds_F", "Stun Pistol", 2000 },
-            { "hgun_P07_F", "", 7500 },
+            { "CUP_hgun_M9", "", 2000 },
+            { "CUP_15Rnd_9x19_M9", "", 90 },
+            { "CUP_sgun_M1014", "", 4500 },
+            { "CUP_8Rnd_B_Beneli_74Slug", "", 65 },
+            { "CUP_8Rnd_B_Beneli_74Pellets", "", 250 },
+            { "CUP_smg_MP5A5", "", 6500 },
+            { "CUP_30Rnd_9x19_MP5", "", 125 },
+            { "CUP_arifle_FNFAL", "", 7750 },
+            { "CUP_20Rnd_762x51_FNFAL_M", "", 350 },
+            { "CUP_arifle_M4A1", "", 8650 },
+            { "CUP_arifle_M16A2", "", 7900 },
+            { "CUP_arifle_M16A2_GL", "", 8700 },
+            { "CUP_arifle_M16A4_Base", "", 9000 },
+            { "CUP_arifle_M16A4_GL", "", 10500 },
+            { "CUP_20Rnd_556x45_Stanag", "", 450 },
+            { "SmokeShell", "", 150 },
+            { "SmokeShellYellow", "", 150 },
+            { "SmokeShellRed", "", 150 },
+            { "SmokeShellGreen", "", 150 },
+            { "SmokeShellPurple", "", 150 },
+            { "SmokeShellBlue", "", 150 },
+            { "SmokeShellOrange", "", 150 },
+            { "CUP_1Rnd_Smoke_M203", "", 150 },
+            { "CUP_1Rnd_SmokeRed_M203", "", 150 },
+            { "CUP_1Rnd_SmokeGreen_M203", "", 150 },
+            { "CUP_1Rnd_SmokeYellow_M203", "", 150 },
+            { "CUP_FlareWhite_M203", "", 150 },
+            { "CUP_FlareGreen_M203", "", 150 },
+            { "CUP_FlareRed_M203", "", 150 },
+            { "CUP_FlareYellow_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_White_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_Red_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_Green_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_White_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_Red_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_Green_M203", "", 150 },
             { "HandGrenade_Stone", "Flashbang", 1700 },
             { "Binocular", "", 150 },
             { "ItemGPS", "", 100 },
             { "ToolKit", "", 250 },
-            { "muzzle_snds_L", "", 650 },
             { "FirstAidKit", "", 150 },
             { "Medikit", "", 1000 },
-            { "NVGoggles", "", 2000 },
-            { "16Rnd_9x21_Mag", "", 50 },
-            { "20Rnd_556x45_UW_mag", "Taser Rifle Magazine", 125 }
+            { "CUP_NVG_PVS7", "", 2000 }
+            
         };
     };
 
-    class cop_patrol {
-        name = "Altis Patrol Officer Shop";
+    class cop_criminal {
+        name = "Criminal Response-Officer";
         side = "cop";
-        license = "";
-        level[] = { "life_coplevel", "SCALAR", 2, "You must be a Patrol Officer Rank!" };
+        license = "response";
+        level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_MX_F", "", 35000 },
-            { "SMG_02_ACO_F", "", 30000 },
-            { "HandGrenade_Stone", "Flashbang", 1700 },
-            { "MineDetector", "", 1000 },
-            { "acc_flashlight", "", 750 },
-            { "optic_Holosight", "", 1200 },
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 },
-            { "30Rnd_65x39_caseless_mag", "", 130 },
-            { "30Rnd_9x21_Mag", "", 250 }
+            { "CUP_hgun_Glock17", "", 3500 },
+            { "CUP_17Rnd_9x19_glock17", "", 130 },
+            { "CUP_arifle_M4A1_black", "", 8750 },
+            { "CUP_arifle_M4A1_BUIS_GL", "", 9000 },
+            { "CUP_arifle_Mk16_CQC", "", 11000 },
+            { "CUP_arifle_Mk16_CQC_FG", "", 11000 },
+            { "CUP_arifle_Mk16_CQC_SFG", "", 11000 },
+            { "CUP_arifle_Mk16_CQC_EGLM", "", 11000 },
+            { "CUP_arifle_Mk16_STD", "", 14000 },
+            { "CUP_arifle_Mk16_STD_FG", "", 14000 },
+            { "CUP_arifle_Mk16_STD_SFG", "", 14000 },
+            { "CUP_arifle_Mk16_STD_EGLM", "", 14000 },
+            { "CUP_arifle_Mk16_SV", "", 18000 },
+            { "CUP_srifle_Mk12SPR", "", 22000 },
+            { "CUP_30Rnd_556x45_Stanag", "", 350 },
+            { "CUP_optic_Eotech533", "", 1200 },
+            { "CUP_optic_CompM2_Desert", "", 1200 },
+            { "CUP_optic_LeupoldMk4_CQ_T", "", 1700 },
+            { "CUP_optic_LeupoldM3LR", "", 2200 },
+            { "CUP_arifle_Sa58RIS1_des", "", 7500 },
+            { "CUP_arifle_Sa58RIS2_camo", "", 7500 },
+            { "CUP_30Rnd_Sa58_M", "", 350 },
+            { "CUP_30Rnd_Sa58_M_TracerR", "", 350 },
+            { "CUP_30Rnd_Sa58_M_TracerY", "", 350 },
+            { "CUP_30Rnd_Sa58_M_TracerG", "", 350 },
+            { "CUP_smg_MP5SD6", "", 7800 },
+            { "CUP_30Rnd_9x19_MP5", "", 350 },
+            { "CUP_glaunch_Mk13", "", 6950 },
+            { "CUP_1Rnd_HE_M203", "", 150 },
+            { "CUP_1Rnd_HEDP_M203", "", 150 },
+            { "CUP_1Rnd_Smoke_M203", "", 150 },
+            { "CUP_1Rnd_SmokeRed_M203", "", 150 },
+            { "CUP_1Rnd_SmokeGreen_M203", "", 150 },
+            { "CUP_1Rnd_SmokeYellow_M203", "", 150 },
+            { "CUP_FlareWhite_M203", "", 150 },
+            { "CUP_FlareGreen_M203", "", 150 },
+            { "CUP_FlareRed_M203", "", 150 },
+            { "CUP_FlareYellow_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_White_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_Red_M203", "", 150 },
+            { "CUP_1Rnd_StarCluster_Green_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_White_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_Red_M203", "", 150 },
+            { "CUP_1Rnd_StarFlare_Green_M203", "", 150 },
+            { "CUP_HandGrenade_M67", "", 1250 }
         };
     };
 
-    class cop_sergeant {
-        name = "Altis Sergeant Officer Shop";
+    class sobr_weapons {
+        name = "SOBR";
         side = "cop";
-        license = "";
-        level[] = { "life_coplevel", "SCALAR", 3, "You must be a Sergeant Rank!" };
+        license = "sobr";
+        level[] = { "", "", -1, "" };
         items[] = {
-            { "SMG_02_ACO_F", "", 15000 },
-            { "hgun_ACPC2_F", "", 17500 },
-            { "HandGrenade_Stone", "Flashbang", 1700 },
-            { "arifle_MXC_F", "", 30000 },
-            { "optic_Arco", "", 2500 },
-            { "muzzle_snds_H", "", 2750 },
-            { "30Rnd_65x39_caseless_mag", "", 100 },
-            { "30Rnd_9x21_Mag", "", 60 },
-            { "9Rnd_45ACP_Mag", "", 200 }
+            { "CUP_arifle_M4A3_desert", "", 15000 },
+            { "CUP_arifle_L85A2", "", 15000 },
+            { "CUP_arifle_L85A2_GL", "", 15000 },
+            { "CUP_arifle_L86A2", "", 15000 },
+            { "CUP_30Rnd_556x45_Stanag", "", 350 },
+            { "CUP_arifle_Mk17_CQC", "", 15000 },
+            { "CUP_arifle_Mk17_CQC_FG", "", 15000 },
+            { "CUP_arifle_Mk17_CQC_SFG", "", 15000 },
+            { "CUP_arifle_Mk17_CQC_EGLM", "", 15000 },
+            { "CUP_arifle_Mk17_STD", "", 15000 },
+            { "CUP_arifle_Mk17_STD_FG", "", 15000 },
+            { "CUP_arifle_Mk17_STD_SFG", "", 15000 },
+            { "CUP_arifle_Mk17_STD_EGLM", "", 15000 },
+            { "CUP_arifle_Mk20", "", 15000 },
+            { "CUP_srifle_M110", "", 15000 },
+            { "CUP_20Rnd_762x51_B_M110", "", 350 },
+            { "CUP_20Rnd_TE1_Yellow_Tracer_762x51_M110", "", 350 },
+            { "CUP_20Rnd_TE1_Red_Tracer_762x51_M110", "", 350 },
+            { "CUP_20Rnd_TE1_Green_Tracer_762x51_M110", "", 350 },
+            { "CUP_20Rnd_TE1_White_Tracer_762x51_M110", "", 350 },
+            { "CUP_srifle_M24_wdl", "", 15000 },
+            { "CUP_srifle_M24_des", "", 15000 },
+            { "CUP_srifle_M40A3", "", 15000 },
+            { "CUP_5Rnd_762x51_M24", "", 350 },
+            { "CUP_lmg_m249_pip4", "", 15000 },
+            { "CUP_lmg_L110A1", "", 15000 },
+            { "CUP_lmg_Mk48_des", "", 15000 },
+            { "CUP_200Rnd_TE4_Red_Tracer_556x45_M249", "", 350 },
+            { "CUP_100Rnd_TE4_Red_Tracer_556x45_M249", "", 350 },
+            { "CUP_lmg_M240", "", 15000 },
+            { "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", "", 350 },
+            { "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "", 350 },
+            { "CUP_srifle_M14_DMR", "", 15000 },
+            { "CUP_20Rnd_762x51_DMR", "", 350 },
+            { "CUP_optic_Eotech533", "", 1500 },
+            { "CUP_optic_ELCAN_SpecterDR", "", 1500 },
+            { "CUP_optic_ElcanM145", "", 1500 },
+            { "CUP_optic_AN_PVS_10", "", 1500 },
+            { "CUP_optic_LeupoldMk4_10x40_LRT_Desert", "", 1500 },
+            { "CUP_optic_LeupoldMk4_10x40_LRT_Woodland", "", 1500 },
+            { "CUP_optic_LeupoldMk4_MRT_tan", "", 1500 },
+            { "CUP_optic_CompM2_Desert", "", 1500 },
+            { "CUP_optic_LeupoldMk4", "", 1500 },
+            { "CUP_optic_RCO_desert", "", 1500 },
+            { "CUP_optic_RCO", "", 1500 },
+            { "CUP_bipod_Harris_1A2_L", "", 1500 },
+            { "CUP_bipod_VLTOR_Modpod", "", 1500 },
+            { "CUP_launch_M136", "", 15000 },
+            { "CUP_M136_M", "", 15000 },
+            { "CUP_glaunch_M32", "", 15000 },
+            { "CUP_6Rnd_HE_M203", "", 15000 },
+            { "CUP_6Rnd_FlareWhite_M203", "", 15000 },
+            { "CUP_6Rnd_FlareGreen_M203", "", 15000 },
+            { "CUP_6Rnd_FlareRed_M203", "", 15000 },
+            { "CUP_6Rnd_FlareYellow_M203", "", 15000 },
+            { "CUP_6Rnd_Smoke_M203", "", 15000 },
+            { "CUP_6Rnd_SmokeRed_M203", "", 15000 },
+            { "CUP_6Rnd_SmokeGreen_M203", "", 15000 },
+            { "CUP_6Rnd_SmokeYellow_M203", "", 15000 }
         };
     };
 
