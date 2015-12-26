@@ -76,12 +76,31 @@ class CarShops {
 	class cop_car {
 		side = "cop";
 		vehicles[] = {
-				{ "C_Offroad_01_F", 5000, "", { "", "", -1 } },
-				{ "C_SUV_01_F", 20000, "", { "", "", -1 } },
-				{ "B_MRAP_01_F", 30000, "", { "life_coplevel", "SCALAR", 3 } }
+				{ "CUP_B_M1030", 4200, "", { "", "", -1 } },
+                { "B_Quadbike_01_F", 5000, "", { "", "", -1 } },
+				{ "CUP_C_SUV_TK", 22000, "", { "", "", -1 } },
+                { "CUP_B_HMMWV_Transport_USA", 45000, "response", { "", "", -1 } },
+                { "CUP_B_HMMWV_Unarmed_USA", 75000, "response", { "", "", -1 } }
+				
 		};
 	};
-
+    
+    class sobr_car {
+		side = "cop";
+		vehicles[] = {
+				{ "CUP_B_HMMWV_DSHKM_GPK_ACR", 35000, "response", { "", "", -1 } },
+				{ "CUP_B_HMMWV_AGS_GPK_ACR", 60000, "response", { "", "", -1 } },
+				{ "CUP_B_HMMWV_M2_GPK_USA", 50000, "sobr", { "", "", -1 } },
+                { "CUP_B_HMMWV_SOV_USA", 105000, "sobr", { "", "", -1 } },
+				{ "CUP_B_HMMWV_TOW_USA", 83000, "sobr", { "", "", -1 } },
+                { "CUP_B_HMMWV_MK19_USA", 90000, "sobr", { "", "", -1 } },
+                { "CUP_B_HMMWV_Crows_MK19_USA", 140000, "sobr", { "", "", -1 } },
+                { "CUP_B_HMMWV_Crows_M2_USA", 135000, "sobr", { "", "", -1 } },
+				{ "CUP_B_HMMWV_Avenger_USA", 175000, "sobr", { "", "", -1 } },
+                { "CUP_B_M2Bradley_USA_D", 350000, "sobr", { "", "", -1 } }
+		};
+	};
+    
 	class civ_air {
 		side = "civ";
 		vehicles[] = {
