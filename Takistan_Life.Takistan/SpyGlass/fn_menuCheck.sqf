@@ -28,11 +28,20 @@ while {true} do {
 	{
 		_targetDisplay = _x select 0;
 		_targetName = _x select 1;
-		switch(typeName _targetDisplay) do {
-			case (typeName ""): {if(!isNull (GVAR_UINS [_targetDisplay,displayNull])) exitWith {_detection = true;};};
-			default {if(!isNull (findDisplay _targetDisplay)) exitWith {_detection = true;};};
+		if(!(_targetDisplay == 316000)) then {
+			switch(typeName _targetDisplay) do {
+				case (typeName ""): {if(!isNull (GVAR_UINS [_targetDisplay,displayNull])) exitWith {_detection = true;};};
+				default {if(!isNull (findDisplay _targetDisplay)) exitWith {_detection = true;};};
+			};
+		} else {
+			if(FETCH_CONST(life_adminlevel) < 5) then {
+				switch(typeName _targetDisplay) do {
+					case (typeName ""): {if(!isNull (GVAR_UINS [_targetDisplay,displayNull])) exitWith {_detection = true;};};
+					default {if(!isNull (findDisplay _targetDisplay)) exitWith {_detection = true;};};
+				};
+			};
 		};
-			
+
 		if(_detection) exitWith {
 			[[profileName,steamid,format["MenuBasedHack_%1",_targetName]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 			[[profileName,format["Menu Hack: %1",_targetName]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
