@@ -81,8 +81,8 @@ class CarShops {
 				{ "CUP_B_M1030", 2500, { "" }, { "", "", -1 } },
                 { "B_Quadbike_01_F", 3200, { "" }, { "", "", -1 } },
 				{ "CUP_C_SUV_TK", 22000, { "" }, { "", "", -1 } },
-                { "CUP_B_HMMWV_Transport_USA", 45000, { "response" }, { "", "", -1 } },
-                { "CUP_B_HMMWV_Unarmed_USA", 75000, { "response" }, { "", "", -1 } }
+                { "CUP_B_HMMWV_Transport_USA", 35000, { "response" }, { "", "", -1 } },
+                { "CUP_B_HMMWV_Unarmed_USA", 45000, { "response" }, { "", "", -1 } }
 				
 		};
 	};
@@ -90,7 +90,7 @@ class CarShops {
     class sobr_car {
 		side = "cop";
 		vehicles[] = {
-				{ "CUP_B_HMMWV_DSHKM_GPK_ACR", 35000, { "response" }, { "", "", -1 } },
+				{ "CUP_B_HMMWV_DSHKM_GPK_ACR", 55000, { "response" }, { "", "", -1 } },
 				{ "CUP_B_HMMWV_AGS_GPK_ACR", 60000, { "response" }, { "", "", -1 } },
 				{ "CUP_B_HMMWV_M2_GPK_USA", 50000, { "sobr" }, { "", "", -1 } },
                 { "CUP_B_HMMWV_SOV_USA", 105000, { "sobr" } { "", "", -1 } },
@@ -127,7 +127,7 @@ class CarShops {
                 { "CUP_B_UH60M_Unarmed_FFV_US", 140000, { "cAir" }, { "", "", -1 } },
                 { "CUP_B_MH60S_USMC", 165000, { "cAir" }, { "", "", -1 } },
                 { "CUP_B_MH60S_FFV_USMC", 165000, { "cAir" }, { "", "", -1 } },
-                { "CUP_B_UH60M_Unarmed_FFV_MEV_US", 320000, { "cAir" }, { "", "", -1 } },
+                { "CUP_B_UH60M_Unarmed_FFV_MEV_US", 120000, { "cAir" }, { "", "", -1 } },
                 { "CUP_B_AH1Z", 725000, { "cAir" }, { "", "", -1 } },
                 { "CUP_B_AH64D_USA", 750000, { "cAir" }, { "", "", -1 } }
 		};
@@ -228,6 +228,263 @@ class CfgVehicles {
         textures[] = {};
 	};
 
+    class CUP_B_M1030 {
+        vItemSpace = 20;
+        storageFee[] = { 0, 100, 0, 0 };
+        garageSell[] = { 0, 1250, 0, 0 };
+        insurance = 2500;
+        chopShop = 1300;
+        textures[] = {};
+	};
+
+    class CUP_C_SUV_TK {
+        vItemSpace = 200;
+        storageFee[] = { 450, 250, 450, 250 };
+        garageSell[] = { 13000, 15000, 15000, 15000 };
+        insurance = 7500;
+        chopShop = 18000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_Transport_USA {
+        vItemSpace = 200;
+        storageFee[] = { 0, 300, 0, 0 };
+        garageSell[] = { 0, 19000, 0, 0 };
+        insurance = 16000;
+        chopShop = 23000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_Unarmed_USA : CUP_B_HMMWV_Transport_USA {
+        storageFee[] = { 0, 300, 0, 0 };
+        garageSell[] = { 0, 20000, 0, 0 };
+        insurance = 16000;
+        chopShop = 29000;
+	};
+    
+    class CUP_B_HMMWV_DSHKM_GPK_ACR {
+        vItemSpace = 50;
+        storageFee[] = { 0, 1000, 0, 0 };
+        garageSell[] = { 0, 28000, 0, 0 };
+        insurance = 24000;
+        chopShop = 23000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_AGS_GPK_ACR : CUP_B_HMMWV_DSHKM_GPK_ACR {
+        storageFee[] = { 0, 1000, 0, 0 };
+        garageSell[] = { 0, 28000, 0, 0 };
+        insurance = 34000;
+        chopShop = 46000;
+	};
+    
+    class CUP_B_HMMWV_M2_GPK_USA : CUP_B_HMMWV_DSHKM_GPK_ACR {
+        storageFee[] = { 0, 1000, 0, 0 };
+        garageSell[] = { 0, 23000, 0, 0 };
+        insurance = 27000;
+        chopShop = 31000;
+	};
+    
+    class CUP_B_HMMWV_SOV_USA {
+        vItemSpace = 100;
+        storageFee[] = { 0, 1000, 0, 0 };
+        garageSell[] = { 0, 62000, 0, 0 };
+        insurance = 32000;
+        chopShop = 76000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_TOW_USA {
+        vItemSpace = 50;
+        storageFee[] = { 0, 1250, 0, 0 };
+        garageSell[] = { 0, 48000, 0, 0 };
+        insurance = 27000;
+        chopShop = 58000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_MK19_USA {
+        vItemSpace = 75;
+        storageFee[] = { 0, 1250, 0, 0 };
+        garageSell[] = { 0, 57000, 0, 0 };
+        insurance = 31000;
+        chopShop = 61000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_Crows_MK19_USA {
+        vItemSpace = 50;
+        storageFee[] = { 0, 1250, 0, 0 };
+        garageSell[] = { 0, 76000, 0, 0 };
+        insurance = 47000;
+        chopShop = 88000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_Crows_M2_USA {
+        vItemSpace = 50;
+        storageFee[] = { 0, 1250, 0, 0 };
+        garageSell[] = { 0, 74000, 0, 0 };
+        insurance = 45000;
+        chopShop = 86000;
+        textures[] = {};
+	};
+    
+    class CUP_B_HMMWV_Avenger_USA {
+        vItemSpace = 25;
+        storageFee[] = { 0, 2500, 0, 0 };
+        garageSell[] = { 0, 110000, 0, 0 };
+        insurance = 76000;
+        chopShop = 92000;
+        textures[] = {};
+	};
+    
+    class CUP_B_M2Bradley_USA_D {
+        vItemSpace = 50;
+        storageFee[] = { 0, 5000, 0, 0 };
+        garageSell[] = { 0, 230000, 0, 0 };
+        insurance = 120000;
+        chopShop = 260000;
+        textures[] = {};
+	};
+    
+    class MELB_MH6M {
+        vItemSpace = 100;
+        storageFee[] = { 0, 1200, 0, 0 };
+        garageSell[] = { 0, 41000, 0, 0 };
+        insurance = 22000;
+        chopShop = 45000;
+        textures[] = {};
+	};
+    
+    class MELB_H6M {
+        vItemSpace = 150;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 34000, 0, 0 };
+        insurance = 18000;
+        chopShop = 30000;
+        textures[] = {};
+	};
+    
+    class MELB_AH6M_L {
+        vItemSpace = 150;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 68000, 0, 0 };
+        insurance = 34000;
+        chopShop = 70000;
+        textures[] = {};
+	};
+    
+    class MELB_AH6M_M {
+        vItemSpace = 150;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 100000, 0, 0 };
+        insurance = 67000;
+        chopShop = 100000;
+        textures[] = {};
+	};
+    
+    class MELB_AH6M_H {
+        vItemSpace = 150;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 130000, 0, 0 };
+        insurance = 74000;
+        chopShop = 120000;
+        textures[] = {};
+	};
+    
+    class CUP_B_UH1Y_UNA_USMC {
+        vItemSpace = 200;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 49000, 0, 0 };
+        insurance = 30000;
+        chopShop = 70000;
+        textures[] = {};
+	};
+    
+    class CUP_B_UH1Y_GUNSHIP_USMC {
+        vItemSpace = 150;
+        storageFee[] = { 0, 1200, 0, 0 };
+        garageSell[] = { 0, 99000, 0, 0 };
+        insurance = 42000;
+        chopShop = 150000;
+        textures[] = {};
+	};
+    
+    class CUP_B_Mi171Sh_ACR {
+        vItemSpace = 300;
+        storageFee[] = { 0, 1200, 0, 0 };
+        garageSell[] = { 0, 129000, 0, 0 };
+        insurance = 64000;
+        chopShop = 140000;
+        textures[] = {};
+	};
+    
+    class CUP_B_Mi171Sh_Unarmed_ACR {
+        vItemSpace = 300;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 62000, 0, 0 };
+        insurance = 34000;
+        chopShop = 72000;
+        textures[] = {};
+	};
+    
+    class CUP_B_UH60M_US {
+        vItemSpace = 250;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 97000, 0, 0 };
+        insurance = 54000;
+        chopShop = 112000;
+        textures[] = {};
+	};
+    
+    class CUP_B_UH60M_Unarmed_FFV_US {
+        vItemSpace = 250;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 82000, 0, 0 };
+        insurance = 48000;
+        chopShop = 96000;
+        textures[] = {};
+	};
+    
+    class CUP_B_MH60S_USMC {
+        vItemSpace = 250;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 95000, 0, 0 };
+        insurance = 51000;
+        chopShop = 98000;
+        textures[] = {};
+	};
+    
+    class CUP_B_MH60S_FFV_USMC : CUP_B_MH60S_USMC {};
+    
+    class CUP_B_UH60M_Unarmed_FFV_MEV_US {
+        vItemSpace = 300;
+        storageFee[] = { 0, 800, 0, 0 };
+        garageSell[] = { 0, 87000, 0, 0 };
+        insurance = 46000;
+        chopShop = 89000;
+        textures[] = {};
+	};
+    
+    class CUP_B_AH1Z {
+        vItemSpace = 0;
+        storageFee[] = { 0, 3400, 0, 0 };
+        garageSell[] = { 0, 380000, 0, 0 };
+        insurance = 89000;
+        chopShop = 240000;
+        textures[] = {};
+	};
+    
+    class CUP_B_AH64D_USA {
+        vItemSpace = 0;
+        storageFee[] = { 0, 3400, 0, 0 };
+        garageSell[] = { 0, 420000, 0, 0 };
+        insurance = 96000;
+        chopShop = 240000;
+        textures[] = {};
+	};
+    
 	class B_MRAP_01_hmg_F : Default {
         vItemSpace = 100;
 	};
