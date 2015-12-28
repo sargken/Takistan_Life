@@ -14,11 +14,16 @@ class CarShops {
 		side = "civ";
 		vehicles[] = {
 				{ "B_Quadbike_01_F", 2500, { "" }, { "", "", -1 } },
-				{ "C_Hatchback_01_F", 9500, { "driver" }, { "", "", -1 } },
-				{ "C_Offroad_01_F", 12500, { "driver" }, { "", "", -1 } },
-				{ "C_SUV_01_F", 30000, { "driver" }, { "", "", -1 } },
-				{ "C_Hatchback_01_sport_F", 40000, { "driver" }, { "", "", -1 } },
-				{ "C_Van_01_transport_F", 45000, { "driver" }, { "", "", -1 } }
+				{ "CUP_C_Datsun", 9500, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_Datsun_Covered", 10000, { "driver" }, { "", "", -1 } },
+                { "CUP_C_Datsun_4seat", 10000, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_Datsun_Plain", 6000, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_Datsun_Tubeframe", 13000, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_UAZ_Unarmed_TK_CIV", 15000, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_UAZ_Open_TK_CIV", 15000, { "driver" }, { "", "", -1 } },
+                { "CUP_C_LR_Transport_CTK", 30000, { "driver" }, { "", "", -1 } },
+				{ "CUP_C_SUV_TK", 45000, { "driver" }, { "", "", -1 } }
+				
 		};
 	};
 
@@ -93,7 +98,7 @@ class CarShops {
 				{ "CUP_B_HMMWV_DSHKM_GPK_ACR", 55000, { "response" }, { "", "", -1 } },
 				{ "CUP_B_HMMWV_AGS_GPK_ACR", 60000, { "response" }, { "", "", -1 } },
 				{ "CUP_B_HMMWV_M2_GPK_USA", 50000, { "sobr" }, { "", "", -1 } },
-                { "CUP_B_HMMWV_SOV_USA", 105000, { "sobr" } { "", "", -1 } },
+                { "CUP_B_HMMWV_SOV_USA", 105000, { "sobr" }, { "", "", -1 } },
 				{ "CUP_B_HMMWV_TOW_USA", 83000, { "sobr" }, { "", "", -1 } },
                 { "CUP_B_HMMWV_MK19_USA", 90000, { "sobr" }, { "", "", -1 } },
                 { "CUP_B_HMMWV_Crows_MK19_USA", 140000, { "sobr" }, { "", "", -1 } },
@@ -239,8 +244,8 @@ class CfgVehicles {
 
     class CUP_C_SUV_TK {
         vItemSpace = 200;
-        storageFee[] = { 450, 250, 450, 250 };
-        garageSell[] = { 13000, 15000, 15000, 15000 };
+        storageFee[] = { 250, 250, 250, 250 };
+        garageSell[] = { 13000, 27000, 15000, 15000 };
         insurance = 7500;
         chopShop = 18000;
         textures[] = {};
@@ -489,6 +494,40 @@ class CfgVehicles {
         vItemSpace = 100;
 	};
 
+    class CUP_C_Datsun {
+        vItemSpace = 175;
+        storageFee[] = { 25, 0, 0, 0 };
+        garageSell[] = { 6000, 0, 0, 0 };
+        insurance = 1000;
+        chopShop = 6200;
+        textures[] = { };
+    };
+    
+    class CUP_C_Datsun_Covered : CUP_C_Datsun {};
+    class CUP_C_Datsun_4seat : CUP_C_Datsun {};
+    class CUP_C_Datsun_Plain : CUP_C_Datsun {};
+    class CUP_C_Datsun_Tubeframe : CUP_C_Datsun {};
+    
+    class CUP_C_UAZ_Unarmed_TK_CIV {
+        vItemSpace = 225;
+        storageFee[] = { 25, 0, 0, 0 };
+        garageSell[] = { 9000, 0, 0, 0 };
+        insurance = 2500;
+        chopShop = 9800;
+        textures[] = { };
+    };
+    
+    class CUP_C_UAZ_Unarmed_TK_CIV : CUP_C_UAZ_Open_TK_CIV {};
+    
+    class CUP_C_LR_Transport_CTK {
+        vItemSpace = 300;
+        storageFee[] = { 25, 0, 0, 0 };
+        garageSell[] = { 21000, 0, 0, 0 };
+        insurance = 6000;
+        chopShop = 28000;
+        textures[] = { };
+    };
+    
 	class O_Boat_Armed_01_hmg_F {
         vItemSpace = 175;
         storageFee[] = { 1000, 0, 0, 0 };
@@ -764,7 +803,7 @@ class CfgVehicles {
 	        } }
         };
     };
-
+    
 	class I_Truck_02_covered_F {
         vItemSpace = 250;
         storageFee[] = { 14500, 0, 0, 0 };
