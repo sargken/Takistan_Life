@@ -18,16 +18,23 @@ class WeaponShops {
         license = "gun";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Rook40_F", "", 6500 },
-            { "hgun_Pistol_heavy_02_F", "", 9850 },
-            { "hgun_ACPC2_F", "", 11500 },
-            { "hgun_PDW2000_F", "", 20000 },
-            { "optic_ACO_grn_smg", "", 2500 },
-            { "V_Rangemaster_belt", "", 4900 },
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "9Rnd_45ACP_Mag", "", 45 },
-            { "6Rnd_45ACP_Cylinder", "", 50 },
-            { "30Rnd_9x21_Mag", "", 75 }
+            { "CUP_hgun_M9", "", 7000 },
+            { "CUP_15Rnd_9x19_M9", "", 100 },
+            { "CUP_hgun_Colt1911", "", 7800 },
+            { "CUP_7Rnd_45ACP_1911", "", 90 },
+            { "CUP_hgun_TaurusTracker455", "", 7600 },
+            { "CUP_6Rnd_45ACP_M", "", 90 },
+            { "CUP_srifle_CZ550", "", 21000 },
+            { "CUP_5x_22_LR_17_HMR_M", "", 120 },
+            { "CUP_srifle_LeeEnfield", "", 19000 },
+            { "CUP_10x_303_M", "", 150 },
+            { "CUP_sgun_Saiga12K", "", 35000 },
+            { "CUP_8Rnd_B_Saiga12_74Slug_M", "", 150 },
+            { "CUP_8Rnd_B_Saiga12_74Pellets_M", "", 150 },
+            { "CUP_arifle_M16A2", "", 42000 },
+            { "CUP_20Rnd_556x45_Stanag", "", 150 },
+            { "CUP_arifle_FNFAL", "", 46000 },
+            { "CUP_20Rnd_762x51_FNFAL_M", "", 150 }
         };
     };
 
@@ -37,19 +44,65 @@ class WeaponShops {
         license = "rebel";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "arifle_TRG20_F", "", 25000 },
-            { "arifle_Katiba_F", "", 30000 },
-            { "srifle_DMR_01_F", "", 50000 },
-            { "arifle_SDAR_F", "", 20000 },
-            { "optic_ACO_grn", "", 3500 },
-            { "optic_Holosight", "", 3600 },
-            { "acc_flashlight", "", 1000 },
-            { "optic_Hamr", "", 7500 },
-            { "30Rnd_9x21_Mag", "", 200 },
-            { "20Rnd_556x45_UW_mag", "", 125 },
-            { "30Rnd_556x45_Stanag", "", 300 },
-            { "10Rnd_762x51_Mag", "", 500 },
-            { "30Rnd_65x39_caseless_green", "", 275 }
+            { "CUP_hgun_Colt1911", "", 1000 },
+            { "CUP_7Rnd_45ACP_1911", "", 150 },
+            { "CUP_hgun_TaurusTracker455", "", 800 },
+            { "CUP_hgun_TaurusTracker455_gold", "", 2200 },
+            { "CUP_6Rnd_45ACP_M", "", 150 },
+            { "CUP_hgun_Makarov", "", 1400 },
+            { "CUP_8Rnd_9x18_Makarov_M", "", 150 },
+            { "CUP_hgun_SA61", "", 7900 },
+            { "CUP_20Rnd_B_765x17_Ball_M", "", 190 },
+            { "CUP_sgun_Saiga12K", "", 14000 },
+            { "CUP_8Rnd_B_Saiga12_74Slug_M", "", 150 },
+            { "CUP_8Rnd_B_Saiga12_74Pellets_M", "", 150 },
+            { "CUP_srifle_LeeEnfield", "", 17000 },
+            { "CUP_10x_303_M", "", 150 },
+            { "CUP_arifle_AKM", "", 29000 },
+            { "CUP_arifle_AKS", "", 29000 },
+            { "CUP_arifle_AKS_Gold", "", 34000 },
+            { "CUP_30Rnd_762x39_AK47_M", "", 250 },
+            { "CUP_arifle_Sa58P", "", 24000 },
+            { "CUP_arifle_Sa58V", "", 24000 },
+            { "CUP_30Rnd_Sa58_M", "", 175 },
+            { "CUP_arifle_AK74", "", 32000 },
+            { "CUP_arifle_AK74_GL", "", 38000 },
+            { "CUP_arifle_AKS74", "", 33000 },
+            { "CUP_arifle_AKS74U", "", 33000 },
+            { "CUP_arifle_RPK74", "", 41000 },
+            { "CUP_30Rnd_545x39_AK_M", "", 150 },
+            { "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M", "", 750 },
+            { "CUP_optic_Kobra", "", 50 },
+            { "CUP_optic_PSO_1", "", 50 },
+            { "CUP_lmg_PKM", "", 49000 },
+            { "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M", "", 750 },
+            { "CUP_srifle_SVD", "", 66000 },
+            { "CUP_optic_PSO_3", "", 2500 },
+            { "CUP_10Rnd_762x54_SVD_M", "", 150 },
+            { "CUP_srifle_CZ550", "", 17000 },
+            { "CUP_5x_22_LR_17_HMR_M", "", 75 },
+            { "CUP_launch_RPG7V", "", 78000 },
+            { "CUP_PG7V_M", "", 500 },
+            { "CUP_PG7VM_M", "", 500 },
+            { "CUP_PG7VL_M", "", 500 },
+            { "CUP_PG7VR_M", "", 500 },
+            { "CUP_OG7_M", "", 500 },
+            { "CUP_HandGrenade_RGD5", "", 150 },
+            { "CUP_glaunch_M79", "", 75 },
+            { "CUP_1Rnd_HE_M203", "", 75 },
+            { "CUP_1Rnd_HE_GP25_M", "", 75 },
+            { "CUP_FlareRed_GP25_M", "", 75 },
+            { "CUP_FlareGreen_GP25_M", "", 75 },
+            { "CUP_FlareYellow_GP25_M", "", 75 },
+            { "CUP_FlareWhite_GP25_M", "", 75 },
+            { "CUP_1Rnd_SMOKE_GP25_M", "", 75 },
+            { "CUP_1Rnd_SmokeRed_GP25_M", "", 75 },
+            { "CUP_1Rnd_SmokeGreen_GP25_M", "", 75 },
+            { "CUP_1Rnd_SmokeYellow_GP25_M", "", 75 },
+            { "CUP_IED_V1_M", "", 15000 },
+            { "CUP_IED_V2_M", "", 15000 },
+            { "CUP_IED_V3_M", "", 15000 },
+            { "CUP_IED_V4_M", "", 15000 }
         };
     };
 
@@ -59,22 +112,27 @@ class WeaponShops {
         license = "";
         level[] = { "", "", -1, "" };
         items[] = {
-            { "hgun_Rook40_F", "", 1500 },
-            { "hgun_Pistol_heavy_02_F", "", 2500 },
-            { "hgun_ACPC2_F", "", 4500 },
-            { "hgun_PDW2000_F", "", 9500 },
-            { "optic_ACO_grn_smg", "", 950 },
-            { "V_Rangemaster_belt", "", 1900 },
-            { "16Rnd_9x21_Mag", "", 25 },
-            { "9Rnd_45ACP_Mag", "", 45 },
-            { "6Rnd_45ACP_Cylinder", "", 50 },
-            { "30Rnd_9x21_Mag", "", 75 }
+            { "CUP_hgun_TaurusTracker455", "", 6500 },
+            { "CUP_6Rnd_45ACP_M", "", 150 },
+            { "CUP_hgun_Makarov", "", 2200 },
+            { "CUP_8Rnd_9x18_Makarov_M", "", 150 },
+            { "CUP_hgun_Colt1911", "", 3000 },
+            { "CUP_7Rnd_45ACP_1911", "", 150 },
+            { "CUP_hgun_MicroUzi", "", 14000 },
+            { "CUP_30Rnd_9x19_UZI", "", 300 },
+            { "CUP_srifle_LeeEnfield", "", 19000 },
+            { "CUP_10x_303_M", "", 150 },
+            { "CUP_arifle_AKM", "", 37000 },
+            { "CUP_arifle_AKS", "", 37000 },
+            { "CUP_30Rnd_762x39_AK47_M", "", 375 },
+            { "CUP_arifle_AKS74U", "", 42000 },
+            { "CUP_30Rnd_545x39_AK_M", "", 350 }
         };
     };
 
     //Basic Shops
     class genstore {
-        name = "Altis General Store";
+        name = "Takitan General Store";
         side = "civ";
         license = "";
         level[] = { "", "", -1, "" };
@@ -146,7 +204,7 @@ class WeaponShops {
     };
 
     class cop_criminal {
-        name = "Criminal Response-Officer";
+        name = "Criminal Response-Officer Gear";
         side = "cop";
         license = "response";
         level[] = { "", "", -1, "" };
@@ -200,7 +258,7 @@ class WeaponShops {
     };
 
     class sobr_weapons {
-        name = "SOBR";
+        name = "SOBR - Heavy Gear Shop";
         side = "cop";
         license = "sobr";
         level[] = { "", "", -1, "" };
