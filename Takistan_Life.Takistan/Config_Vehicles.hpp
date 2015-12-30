@@ -248,8 +248,8 @@ class LifeCfgVehicles {
 	*	storageFee (Getting vehicles out of garage) format:
 	*		INDEX 0: Civilian Price
 	*		INDEX 1: Cop Price
-	*		INDEX 3: EMS Price
-	*		INDEX 4: OPFOR Price (Not implemented in vanilla but still leaving support
+	*		INDEX 2: Independent Price
+	*		INDEX 3: OPFOR Price (Not implemented in vanilla but still leaving support
 	*
 	*	Textures config follows { Texture Name, side, {texture(s)path}}
 	*	Texture(s)path follows this format:
@@ -328,7 +328,7 @@ class LifeCfgVehicles {
 	class CUP_O_LR_Transport_TKM {
 		vItemSpace = 200;
 		storageFee[] = { 250, 250, 250, 250 };
-		garageSell[] = { 6000, 6000, 6000, 6000 };
+		garageSell[] = { 6000, 6000, 3250, 6000 };
 		insurance = 2300;
 		chopShop = 7000;
 		textures[] = {};
@@ -646,15 +646,6 @@ class LifeCfgVehicles {
 		garageSell[] = { 1700000, 1700000, 1700000, 1700000 };
 		insurance = 500000;
 		chopShop = 48000;
-		textures[] = {};
-	};
-	
-	class CUP_O_LR_Transport_TKM {
-		vItemSpace = 200;
-		storageFee[] = { 250, 250, 250, 250 };
-		garageSell[] = { 3750, 3750, 3750, 3750 };
-		insurance = 4000;
-		chopShop = 6000;
 		textures[] = {};
 	};
 	
