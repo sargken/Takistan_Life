@@ -241,7 +241,7 @@ class CarShops {
 	};
 };
 
-class CfgVehicles {
+class LifeCfgVehicles {
  /*
 	*	Vehicle Configs (Contains textures and other stuff)
 	*
