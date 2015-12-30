@@ -43,7 +43,13 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_1","Rasman Aid Center","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["ins_spawn_1","Insurgent Training Camp","\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"]
+		];
+	};
+    
+    case east: {
+		_return = [
+			["opf_spawn_1","Opfor Headquarters","\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"]
 		];
 	};
 };

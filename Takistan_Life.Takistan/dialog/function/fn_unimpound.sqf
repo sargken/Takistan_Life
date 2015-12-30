@@ -21,7 +21,7 @@ _price = switch(playerSide) do {
 	case civilian: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_vehicle,"storageFee"),0)};
 	case west: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_vehicle,"storageFee"),1)};
 	case independent: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_vehicle,"storageFee"),2)};
-	case east: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_vehicle,"storageFee"),4)};
+	case east: {SEL(M_CONFIG(getArray,CONFIG_VEHICLES,_vehicle,"storageFee"),3)};
 };
 
 if(!(EQUAL(typeName _price,typeName 0)) OR _price < 1) then {_price = 1000};
@@ -30,7 +30,7 @@ if(BANK < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_pric
 if(EQUAL(typeName life_garage_sp,typeName [])) then {
 	[_vid,_pid,SEL(life_garage_sp,0),_unit,_price,SEL(life_garage_sp,1)] remoteExec ["TON_fnc_spawnVehicle",RSERV];
 } else {
-	if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
+	if(life_garage_sp in ["medic_spawn_1"]) then {
 		[_vid,_pid,life_garage_sp,_unit,_price] remoteExec ["TON_fnc_spawnVehicle",RSERV];
 	} else {
 		[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,markerDir life_garage_sp] remoteExec ["TON_fnc_spawnVehicle",RSERV];

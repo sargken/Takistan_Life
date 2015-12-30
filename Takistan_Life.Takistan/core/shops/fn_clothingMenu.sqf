@@ -22,7 +22,7 @@ if(!(EQUAL(_license,""))) then {
 };
 if(_exit) exitWith {};
 
-_flag = switch(playerSide) do {case west: {"cop"}; case independent: {"med"}; default {"civ"};};
+_flag = switch(playerSide) do {case west: {"cop"}; case independent: {"ins"}; case east: {"opf"}; default {"civ"};};
 if(!(EQUAL(_flag,_shopSide))) exitWith {};
 
 ctrlSetText [3103,localize _shopTitle];

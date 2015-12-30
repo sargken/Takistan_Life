@@ -29,8 +29,12 @@ switch (playerSide) do {
 		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_civ");
 	};
 	case independent: {
-		BANK = LIFE_SETTINGS(getNumber,"bank_med");
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
+		BANK = LIFE_SETTINGS(getNumber,"bank_ins");
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_ins");
+	};
+    case east: {
+		BANK = LIFE_SETTINGS(getNumber,"bank_opf");
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_opf");
 	};
 };
 
@@ -80,7 +84,12 @@ switch (playerSide) do {
 	};
 	case independent: {
 		//Initialize Medics and blah
-		_handle = [] spawn life_fnc_initMedic;
+		_handle = [] spawn life_fnc_initInsurgent;
+		waitUntil {scriptDone _handle};
+	};
+    case east: {
+		//Initialize Medics and blah
+		_handle = [] spawn life_fnc_initOpfor;
 		waitUntil {scriptDone _handle};
 	};
 };

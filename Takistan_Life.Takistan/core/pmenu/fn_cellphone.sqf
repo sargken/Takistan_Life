@@ -25,7 +25,8 @@ if((FETCH_CONST(life_adminlevel) < 1)) then {
 		switch (side _x) do {
 			case west: {_type = "Cop"};
 			case civilian: {_type = "Civ"};
-			case independent: {_type = "Med"};
+			case independent: {_type = "Ins"};
+            case east: {_type = "Opf"};
 		};
 		_units lbAdd format["%1 (%2)",_x GVAR ["realname",name _x],_type];
 		_units lbSetData [(lbSize _units)-1,str(_x)];

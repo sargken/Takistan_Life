@@ -60,7 +60,8 @@ switch (_code) do {
 	case _mapKey: {
 		switch (playerSide) do {
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_insMarkers;}};
+            case east: {if(!visibleMap) then {[] spawn life_fnc_opfMarkers;}};
 		};
 	};
 	
@@ -130,7 +131,7 @@ switch (_code) do {
 	//L Key?
 	case 38: {
 		//If cop run checks for turning lights on.
-		if(_shift && playerSide in [west,independent]) then {
+		if(_shift && playerSide in [west,east]) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
 				if(!isNil {vehicle player GVAR "lights"}) then {
 					if(playerSide == west) then {
@@ -155,7 +156,7 @@ switch (_code) do {
 	
 	//F Key
 	case 33: {
-		if(playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
+		if(playerSide in [west,east] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
 			[] spawn {
 				life_siren_active = true;
 				sleep 4.7;

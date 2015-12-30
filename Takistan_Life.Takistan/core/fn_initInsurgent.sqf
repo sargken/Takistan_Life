@@ -4,7 +4,7 @@
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
-	Initializes the medic..
+	Initializes the Insurgents..
 */
 private["_end"];
 player addRating 99999999;

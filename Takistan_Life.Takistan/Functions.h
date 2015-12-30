@@ -24,7 +24,8 @@ class Life_Client_Core
 		class setupEVH {};
 		class initCiv {};
 		class initCop {};
-		class initMedic {};
+		class initInsurgent {};
+        class initOpfor {};
 		class welcomeNotification {};
 		class survival {};
 	};
@@ -119,6 +120,20 @@ class Life_Client_Core
 		class garageRefund {};
 	};
 	
+    class Insurgent
+	{
+		file = "core\insurgent";
+        class insLoadout {};
+		class insMarkers {};
+	};
+    
+    class Opfor
+	{
+		file = "core\opfor";
+        class opfLoadout {};
+		class opfMarkers {};
+	};
+    
 	class Config
 	{
 		file = "core\config";

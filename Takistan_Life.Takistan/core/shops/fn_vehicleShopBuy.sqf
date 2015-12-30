@@ -8,6 +8,7 @@
 */
 private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_shopSide","_licenses","_exit"];
 _mode = SEL(_this,0);
+_exit = false;
 if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
@@ -89,9 +90,9 @@ switch(playerSide) do {
 		};
 	};
 	
-	case independent: {
-		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
-	};
+	//case independent: {
+	//	[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+	//};
 };
 
 _vehicle allowDamage true;

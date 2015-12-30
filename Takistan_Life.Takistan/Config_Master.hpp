@@ -25,7 +25,7 @@
 */
 class Life_Settings {
 	/* Persistent Settings */
-	save_civ_weapons = false; //Allow civilians to save weapons on them?
+	save_civ_weapons = true; //Allow civilians to save weapons on them?
 	save_virtualItems = true; //Save Virtual items (all sides)?
 
 	/* Revive system settings */
@@ -53,12 +53,14 @@ class Life_Settings {
 	/* Initial Bank Amount */
 	bank_cop = 10000; //Amount of cash on bank for new cops
 	bank_civ = 8000; //Amount of cash on bank for new civillians
-	bank_med = 8500; //Amount of cash on bank for new medics
+	bank_ins = 8500; //Amount of cash on bank for new insurgents
+	bank_opf = 10000; //Amount of cash on bank for new opfor
 
 	/* Paycheck Amount */
 	paycheck_cop = 5000; //Payment for cops
 	paycheck_civ = 4000; //Payment for civillians
-	paycheck_med = 5000; //Payment for medics
+	paycheck_ins = 4000; //Payment for insurgents
+	paycheck_opf = 5000; //Payment for opfor
 
 	/* Federal Reserve settings */
 	noatm_timer = 10; //Time in minutes that players won't be able to deposit his money after selling stolen gold
@@ -207,11 +209,11 @@ class Licenses {
 	LICENSEMACRO(pilot,"STR_License_Pilot","pilot",25000,false,"civ")
 	LICENSEMACRO(gun,"STR_License_Firearm","gun",10000,false,"civ")
 	LICENSEMACRO(dive,"STR_License_Diving","dive",2000,false,"civ")
-    LICENSEMACRO(oil,"STR_License_Oil","oil",10000,false,"civ")
-    LICENSEMACRO(cAir,"STR_License_Pilot","cAir",15000,false,"cop")	
-    LICENSEMACRO(patrol,"STR_License_Patrol","patrol",10000,false,"cop")
-    LICENSEMACRO(response,"STR_License_Response","response",150000,false,"cop")
-    LICENSEMACRO(sobr,"STR_License_Sobr","sobr",450000,false,"cop")
+	LICENSEMACRO(oil,"STR_License_Oil","oil",10000,false,"civ")
+	LICENSEMACRO(cAir,"STR_License_Pilot","cAir",15000,false,"cop")	
+	LICENSEMACRO(patrol,"STR_License_Patrol","patrol",10000,false,"cop")
+	LICENSEMACRO(response,"STR_License_Response","response",150000,false,"cop")
+	LICENSEMACRO(sobr,"STR_License_Sobr","sobr",450000,false,"cop")
 	LICENSEMACRO(cg,"STR_License_CG","cg",8000,false,"cop")
 	LICENSEMACRO(heroin,"STR_License_Heroin","heroin",25000,true,"civ")
 	LICENSEMACRO(marijuana,"STR_License_Marijuana","marijuana",19500,true,"civ")
@@ -225,7 +227,7 @@ class Licenses {
 	LICENSEMACRO(iron,"STR_License_Iron","iron",9500,false,"civ")
 	LICENSEMACRO(copper,"STR_License_Copper","copper",8000,false,"civ")
 	LICENSEMACRO(cement,"STR_License_Cement","cement",6500,false,"civ")
-	LICENSEMACRO(mAir,"STR_License_Pilot","mAir",15000,false,"med")
+	LICENSEMACRO(mAir,"STR_License_Pilot","mAir",15000,false,"civ")
 	LICENSEMACRO(home,"STR_License_Home","home",75000,false,"civ")
 };
 
@@ -299,8 +301,8 @@ class VirtualShops {
 		name = "STR_Shops_Cement";
 		items[] = { "cement" };
 	};
-    
-    class resource {
+
+	class resource {
 		name = "STR_Shops_Resource";
 		items[] = { "cement", "salt_refined", "iron_refined", "copper_refined", "glass" };
 	};

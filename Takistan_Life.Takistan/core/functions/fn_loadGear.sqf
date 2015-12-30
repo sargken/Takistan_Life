@@ -24,10 +24,19 @@ if(EQUAL(count _itemArray,0)) exitWith {
         };
 
         case independent: {
-            [] call life_fnc_medicLoadout;
+            [] call life_fnc_insLoadout;
+        };
+        
+        case east: {
+            [] call life_fnc_opfLoadout;
         };
     };
 };
+
+diag_log "------------- Load Gear Request -------------";
+diag_log format["QUERY Loaded after switch"];
+diag_log format["ItemArray: %1 ",_itemArray];
+diag_log "------------------------------------------------";
 
 _itemArray params [
 	"_uniform",

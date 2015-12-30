@@ -13,6 +13,12 @@
 			<Original>Mohammed's Jihadi Shop</Original>
 			<Portuguese>Loja de Roupas Rebeldes</Portuguese>
 		</Key>
+        <Key ID="STR_Shops_C_Insurgent">
+			<Original>Insurgent Clothing Shop</Original>
+		</Key>
+        <Key ID="STR_Shops_C_Opfor">
+			<Original>Opfor Clothing Shop</Original>
+		</Key>
 		<Key ID="STR_Shops_C_Diving">
 			<Original>Steve's Diving Shop</Original>
 			<Portuguese>Loja de equipamentos para Mergulho</Portuguese>

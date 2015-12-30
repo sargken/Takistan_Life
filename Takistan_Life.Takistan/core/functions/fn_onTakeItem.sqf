@@ -29,9 +29,4 @@ switch(playerSide) do
 			[] call life_fnc_playerSkins;
 		};
 	};
-	case independent: {
-		if(_item in ["U_Rangemaster"]) then {
-			[] call life_fnc_playerSkins;
-		};
-	};
 };
