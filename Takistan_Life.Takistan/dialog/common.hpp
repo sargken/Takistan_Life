@@ -167,7 +167,7 @@ class Life_RscText {
 	shadow = 1;
 	colorShadow[] = {0, 0, 0, 0.5};
 	font = "PuristaMedium";
-	SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	text = "";
 	colorText[] = {1, 1, 1, 1.0};
 	colorBackground[] = {0, 0, 0, 0};

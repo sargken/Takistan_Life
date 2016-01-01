@@ -77,6 +77,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_FOOD_TEXT;
 		text = "";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .6)";
 		x = 0.958906 * safezoneW + safezoneX;
 		y = 0.8344 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
@@ -86,6 +87,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_WATER_TEXT;
 		text = "";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .4)";
 		x = 0.958905 * safezoneW + safezoneX;
 		y = 0.8674 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
@@ -94,6 +96,7 @@ class playerHUD {
 	class LIFE_HEALTH_TEXT: Life_RscText
 	{
 		idc = IDC_LIFE_HEALTH_TEXT;
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .8)";
 		text = "";
 		x = 0.958906 * safezoneW + safezoneX;
 		y = 0.9004 * safezoneH + safezoneY;
