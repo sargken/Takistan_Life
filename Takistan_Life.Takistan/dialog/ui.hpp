@@ -77,7 +77,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_FOOD_TEXT;
 		text = "";
-		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .6)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .8)";
 		x = 0.958906 * safezoneW + safezoneX;
 		y = 0.8344 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
@@ -87,7 +87,7 @@ class playerHUD {
 	{
 		idc = IDC_LIFE_WATER_TEXT;
 		text = "";
-		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .4)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * .8)";
 		x = 0.958905 * safezoneW + safezoneX;
 		y = 0.8674 * safezoneH + safezoneY;
 		w = 0.020625 * safezoneW;
@@ -111,7 +111,8 @@ class playerHUD {
 		text = "icons\food.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.83 * safezoneH + safezoneY;
-		w = 0.03; h = 0.04;
+		w = 0.03 * safezoneW;
+		h = 0.04 * safezoneH;
 	};
 	class LIFE_PICTURE_WATER: life_RscPicture
 	{
@@ -119,7 +120,8 @@ class playerHUD {
 		text = "icons\water.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.863 * safezoneH + safezoneY;
-		w = 0.03; h = 0.04;
+		w = 0.03 * safezoneW;
+		h = 0.04 * safezoneH;
 	};
 	class LIFE_PICTURE_HEALTH: life_RscPicture
 	{
@@ -127,6 +129,7 @@ class playerHUD {
 		text = "icons\health.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.896 * safezoneH + safezoneY;
-		w = 0.03; h = 0.04;
+		w = 0.03 * safezoneW;
+		h = 0.04 * safezoneH;
 	};
 };
