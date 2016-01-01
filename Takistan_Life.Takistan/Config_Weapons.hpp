@@ -88,7 +88,7 @@ class WeaponShops {
 			{ "CUP_PG7VR_M", "", 500 },
 			{ "CUP_OG7_M", "", 500 },
 			{ "CUP_HandGrenade_RGD5", "", 150 },
-			{ "CUP_glaunch_M79", "", 75 },
+			{ "CUP_glaunch_M79", "", 17000 },
 			{ "CUP_1Rnd_HE_M203", "", 75 },
 			{ "CUP_1Rnd_HE_GP25_M", "", 75 },
 			{ "CUP_FlareRed_GP25_M", "", 75 },
@@ -112,6 +112,15 @@ class WeaponShops {
 		license = "";
 		level[] = { "", "", -1, "" };
 		items[] = {
+			{ "Binocular", "", 150 },
+			{ "ItemGPS", "", 100 },
+			{ "ToolKit", "", 250 },
+			{ "FirstAidKit", "", 150 },
+			{ "NVGoggles", "", 2000 },
+			{ "Chemlight_red", "", 300 },
+			{ "Chemlight_yellow", "", 300 },
+			{ "Chemlight_green", "", 300 },
+			{ "Chemlight_blue", "", 300 },
 			{ "CUP_hgun_Colt1911", "", 1000 },
 			{ "CUP_7Rnd_45ACP_1911", "", 150 },
 			{ "CUP_hgun_TaurusTracker455", "", 800 },
@@ -170,7 +179,7 @@ class WeaponShops {
 			{ "CUP_PG7VR_M", "", 500 },
 			{ "CUP_OG7_M", "", 500 },
 			{ "CUP_HandGrenade_RGD5", "", 150 },
-			{ "CUP_glaunch_M79", "", 75 },
+			{ "CUP_glaunch_M79", "", 17000 },
 			{ "CUP_1Rnd_HE_M203", "", 75 },
 			{ "CUP_1Rnd_HE_GP25_M", "", 75 },
 			{ "CUP_FlareRed_GP25_M", "", 75 },
@@ -194,6 +203,14 @@ class WeaponShops {
 		license = "";
 		level[] = { "", "", -1, "" };
 		items[] = {
+			{ "Binocular", "", 150 },
+			{ "ItemGPS", "", 100 },
+			{ "ToolKit", "", 250 },
+			{ "FirstAidKit", "", 150 },
+			{ "Chemlight_red", "", 300 },
+			{ "Chemlight_yellow", "", 300 },
+			{ "Chemlight_green", "", 300 },
+			{ "Chemlight_blue", "", 300 },
 			{ "CUP_hgun_Makarov", "", 1400 },
 			{ "CUP_8Rnd_9x18_Makarov_M", "", 150 },
 			{ "CUP_hgun_Colt1911", "", 1000 },
@@ -238,7 +255,7 @@ class WeaponShops {
 			{ "CUP_PG7VR_M", "", 500 },
 			{ "CUP_OG7_M", "", 500 },
 			{ "CUP_HandGrenade_RGD5", "", 150 },
-			{ "CUP_glaunch_M79", "", 75 },
+			{ "CUP_glaunch_M79", "", 17000 },
 			{ "CUP_1Rnd_HE_M203", "", 75 },
 			{ "CUP_1Rnd_HE_GP25_M", "", 75 },
 			{ "CUP_FlareRed_GP25_M", "", 75 },
@@ -306,6 +323,15 @@ class WeaponShops {
 		license = "patrol";
 		level[] = { "", "", -1, "" };
 		items[] = {
+			{ "Binocular", "", 150 },
+			{ "ItemGPS", "", 100 },
+			{ "ToolKit", "", 250 },
+			{ "FirstAidKit", "", 150 },
+			{ "NVGoggles", "", 2000 },
+			{ "Chemlight_red", "", 300 },
+			{ "Chemlight_yellow", "", 300 },
+			{ "Chemlight_green", "", 300 },
+			{ "Chemlight_blue", "", 300 },
 			{ "CUP_hgun_M9", "", 2000 },
 			{ "CUP_15Rnd_9x19_M9", "", 90 },
 			{ "CUP_sgun_M1014", "", 4500 },

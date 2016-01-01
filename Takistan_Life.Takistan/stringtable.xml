@@ -104,6 +104,12 @@
 			<French>Equipement de Police</French>
 			<Portuguese>Equipamentos da Polícia</Portuguese>
 		</Key>
+		<Key ID="STR_Shops_Opfor">
+			<Original>Opfor Item Shop</Original>
+		</Key>
+		<Key ID="STR_Shops_Inde">
+			<Original>Opfor Item Shop</Original>
+		</Key>
 		<Key ID="STR_Shops_Cement">
 			<Original>Juan's Cement Laying</Original>
 			<German>Juan's Zementleger</German>
@@ -4471,6 +4477,12 @@
 			<French>Vous devez être un flic pour utiliser ce magasin!</French>
 			<Italian>Devi essere un poliziotto per utilizzare questo negozio!</Italian>
 			<Portuguese>Você tem que ser um policial para usar essa loja!</Portuguese>
+		</Key>
+		<Key ID="STR_Shop_NotaOpfor">
+			<Original>You need to be a opfor to use this store!</Original>
+		</Key>
+		<Key ID="STR_Shop_NotaOpfor">
+			<Original>You need to be a insurgent to use this store!</Original>
 		</Key>
 		<Key ID="STR_Shop_NotaReb">
 			<Original>You don't have rebel training yet!</Original>

@@ -296,7 +296,17 @@ class VirtualShops {
 		name = "STR_Shops_Cop";
 		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "fuelFull", "defusekit" };
 	};
-
+	
+	class opfor {
+		name = "STR_Shops_Opfor";
+		items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "fuelFull", "defusekit" };
+	};
+	
+	class ins {
+		name = "STR_Shops_Inde";
+		items[] = { "waterBottle", "rabbit", "apple", "redgull", "fuelFull" };
+	};
+	
 	class cement {
 		name = "STR_Shops_Cement";
 		items[] = { "cement" };

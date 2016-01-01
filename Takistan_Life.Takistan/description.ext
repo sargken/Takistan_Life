@@ -1,6 +1,6 @@
-author = "Tonic";
-onLoadName = "Altis Life RPG v4.1";
-onLoadMission = "A RPG game mode developed by Tonic";
+author = "Everyone Invloved";
+onLoadName = "Takistan Life Revolution";
+onLoadMission = "A RPG game mode developed by the Community not just tonic.";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
