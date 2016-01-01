@@ -36,17 +36,6 @@ class Mission
 		"A3_Structures_F_Civ_Accessories",
 		"A3_Structures_F_Mil_Flags",
 		"aia_takistan_config",
-		"cup_misc_e_config",
-		"cup_misc3_config",
-		"cup_takistan_config",
-		"A3_Characters_F_EPC",
-		"CAMisc_E_WF",
-		"CAMisc",
-		"cup_camisc",
-		"CUP_Weapons_AmmoBoxes",
-		"CUP_Creatures_People_Military_DummyInfantrySet",
-		"lop_faction_am",
-		"CUP_Creatures_Military_Taki"
 	};
 	addOnsAuto[]=
 	{
@@ -56,8 +45,6 @@ class Mission
 		"A3_Characters_F_BLUFOR",
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_EPC",
-		"lop_faction_am",
-		"CUP_Creatures_Military_Taki",
 		"A3_Structures_F_Civ_Garbage",
 		"A3_Structures_F_Ind_ConcreteMixingPlant",
 		"A3_Structures_F_Mil_Helipads",
@@ -71,13 +58,6 @@ class Mission
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_Mil_Fortification",
-		"cup_misc_e_config",
-		"cup_misc3_config",
-		"CAMisc_E_WF",
-		"CAMisc",
-		"cup_camisc",
-		"CUP_Weapons_AmmoBoxes",
-		"cup_takistan_config"
 	};
 	randomSeed=2004553;
 	class Intel
