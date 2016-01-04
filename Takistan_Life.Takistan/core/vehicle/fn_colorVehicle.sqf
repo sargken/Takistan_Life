@@ -5,12 +5,11 @@
 	Description:
 	Reskins the vehicle
 */
-private "_textures","_className","_classNameLife";
+private ["_textures","_className","_classNameLife"];
 params [
 	["_vehicle",objNull,[objNull]],
 	["_index",-1,[0]]
 ];
-
 _className = typeOf _vehicle;
 _classNameLife = _className;
 

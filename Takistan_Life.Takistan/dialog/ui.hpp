@@ -111,8 +111,8 @@ class playerHUD {
 		text = "icons\food.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.83 * safezoneH + safezoneY;
-		w = 0.03 * safezoneW;
-		h = 0.04 * safezoneH;
+		w = 0.03 / safezoneW;
+		h = 0.04 / safezoneH;
 	};
 	class LIFE_PICTURE_WATER: life_RscPicture
 	{
@@ -120,8 +120,8 @@ class playerHUD {
 		text = "icons\water.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.863 * safezoneH + safezoneY;
-		w = 0.03 * safezoneW;
-		h = 0.04 * safezoneH;
+		w = 0.03 / safezoneW;
+		h = 0.04 / safezoneH;
 	};
 	class LIFE_PICTURE_HEALTH: life_RscPicture
 	{
@@ -129,7 +129,7 @@ class playerHUD {
 		text = "icons\health.paa";
 		x = 0.922813 * safezoneW + safezoneX;
 		y = 0.896 * safezoneH + safezoneY;
-		w = 0.03 * safezoneW;
-		h = 0.04 * safezoneH;
+		w = 0.03 / safezoneW;
+		h = 0.04 / safezoneH;
 	};
 };

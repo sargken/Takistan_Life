@@ -7,8 +7,9 @@
 	Master action key handler, handles requests for picking up various items and
 	interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
 */
-private["_curTarget","_isWater"];
-_curTarget = cursorTarget;
+private["_curTarget","_nearestobject","_isWater"];
+_curTarget = cursorTarget; 
+_nearestobject = nearestObjects [player, [], 3];
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (visiblePositionASL player);
@@ -26,7 +27,7 @@ if(isNull _curTarget) exitWith {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian && !life_action_gathering) then {
+		if((playerSide == civilian || playerSide == independent) && !life_action_gathering) then {
 			_handle = [] spawn life_fnc_gather;
 			waitUntil {scriptDone _handle};
 			life_action_gathering = false;
