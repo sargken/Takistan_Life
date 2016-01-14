@@ -1,6 +1,6 @@
 /*
  * Format:
- *   level: ARRAY (This is for limiting items to certain things)
+ *	level: ARRAY (This is for limiting items to certain things)
  *	  0: Variable to read from
  *	  1: Variable Value Type (SCALAR / BOOL / EQUAL)
  *	  2: What to compare to (-1 = Check Disabled)
@@ -114,6 +114,9 @@ class WeaponShops {
 		items[] = {
 			{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
+			{ "ItemMap", "", 50 },
+			{ "ItemCompass", "", 50 },
+			{ "ItemWatch", "", 50 },
 			{ "ToolKit", "", 250 },
 			{ "FirstAidKit", "", 150 },
 			{ "NVGoggles", "", 2000 },
@@ -196,7 +199,7 @@ class WeaponShops {
 			{ "CUP_IED_V4_M", "", 15000 }
 		};
 	};
-	
+
 	class ins_weapons {
 		name = "Insurgent Weapon Shop";
 		side = "ins";
@@ -205,6 +208,9 @@ class WeaponShops {
 		items[] = {
 			{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
+			{ "ItemMap", "", 50 },
+			{ "ItemCompass", "", 50 },
+			{ "ItemWatch", "", 50 },
 			{ "ToolKit", "", 250 },
 			{ "FirstAidKit", "", 150 },
 			{ "Chemlight_red", "", 300 },
@@ -272,7 +278,7 @@ class WeaponShops {
 			{ "CUP_IED_V4_M", "", 15000 }
 		};
 	};
-	
+
 	class gang {
 		name = "Hideout Armament";
 		side = "civ";
@@ -306,6 +312,9 @@ class WeaponShops {
 		items[] = {
 			{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
+			{ "ItemMap", "", 50 },
+			{ "ItemCompass", "", 50 },
+			{ "ItemWatch", "", 50 },
 			{ "ToolKit", "", 250 },
 			{ "FirstAidKit", "", 150 },
 			{ "NVGoggles", "", 2000 },
@@ -325,13 +334,13 @@ class WeaponShops {
 		items[] = {
 			{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
-			{ "ToolKit", "", 250 },
+			{ "ItemMap", "", 50 },
+			{ "ItemCompass", "", 50 },
+			{ "ItemWatch", "", 50 },
 			{ "FirstAidKit", "", 150 },
-			{ "NVGoggles", "", 2000 },
-			{ "Chemlight_red", "", 300 },
-			{ "Chemlight_yellow", "", 300 },
-			{ "Chemlight_green", "", 300 },
-			{ "Chemlight_blue", "", 300 },
+			{ "ToolKit", "", 250 },
+			{ "Medikit", "", 1000 },
+			{ "CUP_NVG_PVS7", "", 2000 },
 			{ "CUP_hgun_M9", "", 2000 },
 			{ "CUP_15Rnd_9x19_M9", "", 90 },
 			{ "CUP_sgun_M1014", "", 4500 },
@@ -369,13 +378,10 @@ class WeaponShops {
 			{ "CUP_1Rnd_StarFlare_Red_M203", "", 150 },
 			{ "CUP_1Rnd_StarFlare_Green_M203", "", 150 },
 			{ "HandGrenade_Stone", "Flashbang", 1700 },
-			{ "Binocular", "", 150 },
-			{ "ItemGPS", "", 100 },
-			{ "ToolKit", "", 250 },
-			{ "FirstAidKit", "", 150 },
-			{ "Medikit", "", 1000 },
-			{ "CUP_NVG_PVS7", "", 2000 }
-			
+			{ "Chemlight_red", "", 300 },
+			{ "Chemlight_yellow", "", 300 },
+			{ "Chemlight_green", "", 300 },
+			{ "Chemlight_blue", "", 300 }
 		};
 	};
 
@@ -404,6 +410,8 @@ class WeaponShops {
 			{ "CUP_optic_CompM2_Desert", "", 1200 },
 			{ "CUP_optic_LeupoldMk4_CQ_T", "", 1700 },
 			{ "CUP_optic_LeupoldM3LR", "", 2200 },
+			{ "CUP_bipod_VLTOR_Modpod", "", 1200 },
+			{ "CUP_bipod_Harris_1A2_L", "", 1200 },
 			{ "CUP_arifle_Sa58RIS1_des", "", 7500 },
 			{ "CUP_arifle_Sa58RIS2_camo", "", 7500 },
 			{ "CUP_30Rnd_Sa58_M", "", 350 },
@@ -510,6 +518,9 @@ class WeaponShops {
 		level[] = { "", "", -1, "" };
 		items[] = {
 			{ "ItemGPS", "", 100 },
+			{ "ItemMap", "", 50 },
+			{ "ItemCompass", "", 50 },
+			{ "ItemWatch", "", 50 },
 			{ "Binocular", "", 150 },
 			{ "ToolKit", "", 250 },
 			{ "FirstAidKit", "", 150 },

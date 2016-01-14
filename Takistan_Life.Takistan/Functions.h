@@ -280,6 +280,10 @@ class Life_Client_Core
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
+		class raise {};
+		class lower {};
+		class towerlightson {};
+		class towerlightsoff {};
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
